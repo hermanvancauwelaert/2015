@@ -1,6 +1,8 @@
 DROP TABLE `COTAALAF`
 ;
 
+COMMIT;
+
 CREATE TABLE `COTAALAF` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `taal` varchar(1) NOT NULL,
@@ -12,6 +14,9 @@ CREATE TABLE `COTAALAF` (
 ;
 
 
-select * from cotaalaf;
+select * from `COTAALAF`;
 
-insert into cotaalaf (taal) values('F');
+insert into `COTAALAF` (taal) values('N');
+insert into `COTAALAF` (taal) values('F');
+insert into `COTAALAF` (taal) values('D');
+insert into `COTAALAF` (taal) values('E');
